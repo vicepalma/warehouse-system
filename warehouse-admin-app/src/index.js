@@ -4,9 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Auth0Provider } from "@auth0/auth0-react";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Auth0Provider
+      domain="dev-n3cxud98.us.auth0.com"
+      clientId="Ta013bkhDt1zBfjw0QRBfgBgSHhyZXUJ"
+      redirectUri={window.location.origin}
+    >
+      <App />
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
