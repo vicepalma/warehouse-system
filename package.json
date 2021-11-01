@@ -1,0 +1,11 @@
+{
+  "name": "warehouse-system",
+  "version": "1.0.0",
+  "description": "warehouse system for items",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vicente Palma",
+  "license": "ISC"
+}
