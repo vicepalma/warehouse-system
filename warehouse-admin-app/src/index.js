@@ -6,6 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 import { Auth0Provider } from "@auth0/auth0-react";
 
+import { createBrowserHistory } from 'history';
+
+export const history = createBrowserHistory({
+  basename: process.env.PUBLIC_URL
+});
+
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
