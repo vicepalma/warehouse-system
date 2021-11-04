@@ -22,6 +22,8 @@ function App() {
           <Footer />
           </Fragment>
 
+          //wena shorooooooo
+
       ) : (
         <div className="container">
           <h1>Bienvenido</h1>
