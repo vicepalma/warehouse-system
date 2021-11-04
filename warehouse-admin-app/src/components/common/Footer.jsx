@@ -7,7 +7,7 @@ export const Footer = (props) => {
       <strong>
         Copyright ©
         All Rights Reserved&nbsp;
-        <a href="https://aunablockchain.com/">Auna</a>
+        <a href="https://UltraTech.com/">UltraTech</a>
       </strong>
       <div className="float-right d-none d-sm-inline-block">
         <b>Version</b> 1.0

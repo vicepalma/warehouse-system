@@ -14,24 +14,24 @@ function App() {
   const { isAuthenticated } = useAuth0();
   return (
     <Fragment>
-      {/* {isAuthenticated ? (        
-        <BrowserRouter>
+      {isAuthenticated ? (        
+        <Fragment>
           <Header />
           <Sidebar />
           <Content />
           <Footer />
-        </BrowserRouter>
+          </Fragment>
 
       ) : (
         <div className="container">
           <h1>Bienvenido</h1>
           <LoginButton />
         </div>
-      )} */}
-        <Header />
+      )}
+        {/* <Header />
         <Sidebar />
         <Content />
-        <Footer />
+        <Footer /> */}
     </Fragment>
   );
 }
