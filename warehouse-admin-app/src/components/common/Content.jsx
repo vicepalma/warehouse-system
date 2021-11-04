@@ -1,42 +1,18 @@
 import * as React from "react";
 import * as PropTypes from "prop-types";
 
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Profile from '../profile/Profile';
+import Home from "./Home";
 
 export const Content = (props) => {
   return (
     <div className="content-wrapper">
-      <Switch>
-        <Route exact={true} path="/#">
-          <Profile></Profile>
-        </Route>
-        <Route exact={true} path="#/create-container">
-          <Profile></Profile>
-        </Route>
-        <Route exact={true} path="/admin-container">
-          <Profile></Profile>
-        </Route>
-        <Route exact={true} path="/admin-categories-container">
-          <Profile></Profile>
-        </Route>
-        {/*<Route exact={true} path="/edit-company/:idCompany">
-          <EditCompany></EditCompany>
-        </Route>
-        <Route exact={true} path="/admin-company">
-          <Companies></Companies>
-        </Route>
-        <Route exact={true} path="/admin-application">
-          <Applications></Applications>
-        </Route>
-        <Route exact={true} path="/view-application/:idApp">
-          <ViewApplication></ViewApplication>
-        </Route>
-        <Route exact={true} path="/view-deployment/:requestId">
-          <ViewDeployment></ViewDeployment>
-        </Route> */}
-      </Switch>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="profile" element={<Profile />} />
+      </Routes>
     </div>
   );
 };

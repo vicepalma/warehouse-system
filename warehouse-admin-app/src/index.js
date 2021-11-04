@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from "@auth0/auth0-react";
 
 import { createBrowserHistory } from 'history';
+import { BrowserRouter } from "react-router-dom";
 
 export const history = createBrowserHistory({
   basename: process.env.PUBLIC_URL
@@ -19,7 +20,9 @@ ReactDOM.render(
       clientId="Ta013bkhDt1zBfjw0QRBfgBgSHhyZXUJ"
       redirectUri={window.location.origin}
     >
-      <App />
+      <BrowserRouter basename="warehouse-admin/app">
+        <App />
+      </BrowserRouter>
     </Auth0Provider>
   </React.StrictMode>,
   document.getElementById('root')
